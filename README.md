@@ -10,18 +10,20 @@ If enrolled in the class, a PDF of your report should be submitted to Gradescope
 
 After completing this mini-project, students will be able to:
 
-- chain a dissolved oxygen mass balance through several effluents, mixing each into the river as a new starting condition;
-- recognize when the closed-form Streeter-Phelps solution stops applying, simulate instead, and justify a spatial step with a convergence study;
-- determine whether a treatment plan complies with a standard, and explain where the critical point falls and why;
-- propagate an uncertain load through the model by Monte Carlo, and compare sampling error against discretization error in the same answer;
+- simulate dissolved oxygen concentrations across several effluents;
+- recognize when the closed-form Streeter-Phelps solution stops applying and when discretization is necessary;
+- determine whether a treatment plan complies with a standard, and explain where the critical value falls and why;
+- propagate an uncertain load through the model by Monte Carlo;
+- compare sampling error against discretization error in the same model;
 - recommend a plan and defend it on grounds the model alone does not supply.
 
 ## Repository Overview
 
 The repository consists of the following files:
 
-- `mp01.ipynb`: Jupyter Notebook for the mini-project, including the system data. Students should create code or Markdown blocks as necessary. **This is the only file you should need to edit.**
-- `Project.toml`, `Manifest.toml`: Julia environment files. These should just work, but feel free to add other packages as needed using the `Pkg` package manager. **This is the only other file that you might typically end up making changes to, though you should do this using `Pkg`, not directly.**
+- `mp01.ipynb`: Jupyter Notebook for the mini-project, including the system data. This is the only file you should need to edit.
+- `mp01.pdf`: PDF version of the mini-project for students who don'tm want to rely on the Jupyter Notebook.
+- `Project.toml`, `Manifest.toml`: Julia environment files. These should just work, but feel free to add other packages as needed using the `Pkg` package manager. This is the only other file that you might typically end up making changes to, though you should do this using `Pkg`, not directly.
 - `mp01.qmd`: Source file for Jupyter notebook generation. You shouldn't need to or want to touch this unless you use Quarto to write your report; everything is in the `.ipynb` file.
 - `LICENSE`: This material is licensed using the MIT license. You can ignore this for working on the project.
 - `README.md`: This file. You shouldn't need to touch this.
